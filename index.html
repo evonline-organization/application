@@ -15,23 +15,36 @@
 <link rel="stylesheet" href="css/select2.css">
 <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
 <link rel="stylesheet" href="css/dashboard.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">  
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
 
 <div class="dashboard-wrap">
 
 	<header class="sidebar-header">
-		<h1 class="sidebar-header__logo">m<span>edi<strong>kit</strong></span></h1>
+		<h1 class="sidebar-header__logo">e<span>vo<strong>nline</strong></span></h1>
 	</header>
-	
+
 	<!-- Left Sidebar -->
 	<div class="section section--sidebar" id="sidebar">
-	
-			<nav class="sidebar-menu"> 
+
+			<nav class="sidebar-menu">
 				<ul>
-					<li class="dashboard"><a href="dashboard.html"><b>Dashboard</b></a></li>
-					<li class="components has-submenu"><a href="#"><b>Components<span class="submenu-arrow"></span></b></a>
+					<li class="doctors has-submenu"><a href="#"><b>Médico<span class="submenu-arrow"></span></b></a>
+						<ul class="sidebar-menu__submenu">
+							<li><a href="dashboard__doctors-add.html">Novo Médico</a></li>
+							<li><a href="dashboard__doctors.html">Ver Todos os Médicos</a></li>
+						</ul>
+					</li>
+					<li class="patients has-submenu"><a href="#"><b>Paciente<span class="submenu-arrow"></span></b></a>
+						<ul class="sidebar-menu__submenu">
+							<li><a href="dashboard__patients-add.html">Novo Paciente</a></li>
+							<li><a href="dashboard__patients.html">Ver Todos os Pacientes</a></li>
+							<li><a href="dashboard__patient.html">Prontuário</a></li>
+						</ul>
+					</li>
+					<li class="appointment"><a href="dashboard__appointments.html"><b>Consultas</b></a></li>
+					<li class="components has-submenu"><a href="#"><b>Técnico<span class="submenu-arrow"></span></b></a>
 						<ul class="sidebar-menu__submenu">
 							<li><a href="dashboard__grid.html">Grid</a></li>
 							<li><a href="dashboard__charts.html">Charts</a></li>
@@ -42,42 +55,29 @@
 							<li><a href="dashboard__typography.html">Typography</a></li>
 						</ul>
 					</li>
-					<li class="appointment"><a href="dashboard__appointments.html"><b>Appointments</b></a></li>
-					<li class="doctors has-submenu"><a href="#"><b>Doctors<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__doctors-add.html">Add new doctor</a></li>
-							<li><a href="dashboard__doctors.html">View all doctors</a></li>
-						</ul>
-					</li>
-					<li class="patients has-submenu"><a href="#"><b>Patients<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__patients-add.html">Add new patient</a></li>
-							<li><a href="dashboard__patients.html">View all patients</a></li>
-							<li><a href="dashboard__patient.html">Patient profile</a></li>
-						</ul>
-					</li>		
-					<li class="inbox"><a href="dashboard__messages.html"><b>Messages<span class="submenu-bubble">3</span></b></a></li>
-					<li class="settings"><a href="#"><b>Settings</b></a></li>
+					<li class="dashboard"><a href="dashboard.html"><b>Painel de Controle</b></a></li>
+					<li class="settings"><a href="#"><b>Configurações</b></a></li>
+					<li class="inbox"><a href="dashboard__messages.html"><b>Mensagens<span class="submenu-bubble">3</span></b></a></li>
 				</ul>
 			</nav>
-	
+
 	</div>
-	
+
 	<!-- Content -->
 	<div class="section section--content" id="content">
 		<header class="content-header">
-		
+
 			<div class="sidebar-resize"></div>
 			<div class="mobile-menu"><div class="st-burger-icon st-burger-icon--medium"><span></span></div></div>
-			
-			<div class="content-header__user content-header__dropdown">  
+
+			<div class="content-header__user content-header__dropdown">
 			    <div class="content-header__user-avatar content-header__dropdown-activate" data-dropdown="userdropdown">
 					<div class="content-header__user-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div>
 					<span class="content-header__user-name">Nathalie Roberts</span>
-			    </div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--user-menu " id="userdropdown"> 	
+			    </div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--user-menu " id="userdropdown">
 				<h3 class="dropdown-menu__subtitle">User menu</h3>
-				<ul>   
+				<ul>
 				    <li><a href="#">My profile</a></li>
 				    <li><a href="#">Activity</a></li>
 				    <li><a href="#">Switch account</a></li>
@@ -86,18 +86,18 @@
 				</ul>
 				</nav>
 			</div>
-			
-			<div class="content-header__notifications content-header__dropdown">  
+
+			<div class="content-header__notifications content-header__dropdown">
 			    <div class="content-header__notifications-icon content-header__icon content-header__dropdown-activate" data-dropdown="notificationsdropdown">
 					<img src="images/icons/icons-24-gray/notifications.png" alt="" title=""/>
 					<span class="content-header__icon-bubble">6</span>
-				</div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--notifications-menu" id="notificationsdropdown"> 			
+				</div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--notifications-menu" id="notificationsdropdown">
 				<h3 class="dropdown-menu__subtitle">You have <strong>6</strong> notifications</h3>
-				<ul>    
+				<ul>
 					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>Michael D. kidney surgery <b class="task-time">today</b></li>
 					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>FLU Alert report generated <b class="task-time">today</b></li>
-					
+
 					<li class="d-flex justify-sb"><span>Meeting with <strong>Dr. Joshua</strong> </span> <b class="task-time">tomorrow</b></li>
 					<li class="d-flex justify-sb"><span>Remember to create prescriptions for <strong>Alexander P.</strong></span> <b class="task-time">tomorrow</b></li>
 					<li class="d-flex justify-sb"><span><strong>Jada Sacks</strong> canceled the appointment at Cardiology, Dr. Michael V. </span> <b class="task-time">24 jan, 19</b></li>
@@ -106,13 +106,13 @@
 				</ul>
 				</nav>
 			</div>
-			
-			<div class="content-header__quicklinks content-header__dropdown">  
+
+			<div class="content-header__quicklinks content-header__dropdown">
 			        <div class="content-header__quicklinks-icon content-header__icon content-header__dropdown-activate" data-dropdown="quicklinksdropdown">
 					<img src="images/icons/icons-24-gray/submenu.png" alt="" title=""/>
-				</div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--quicklinks-menu" id="quicklinksdropdown"> 	
-				<h3 class="dropdown-menu__subtitle">Quick links</h3>				
+				</div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--quicklinks-menu" id="quicklinksdropdown">
+				<h3 class="dropdown-menu__subtitle">Quick links</h3>
 				<ul>
 				        <li><a href="#">Add new doctor</a></li>
 					<li><a href="#">Add new patient</a></li>
@@ -120,20 +120,20 @@
 				</ul>
 				</nav>
 			</div>
-			
+
 			<div class="mobile-submenu"></div>
 
-			<nav class="content-header__menu">       
+			<nav class="content-header__menu">
 				<ul>
 					<li class="appointment selected modal-toggle" data-openpopup="appointment"><a href="#">Make an appointment</a></li>
 					<li class="prescription modal-toggle" data-openpopup="prescription"><a href="#">Write a prescription</a></li>
 					<li class="reports modal-toggle" data-openpopup="reports"><a href="#">Generate report</a></li>
 				</ul>
 			</nav>
-			
+
 		</header>
 
-		
+
 		<div class="grid grid--margin">
 
 			<div class="grid__row dashboard-intro">
@@ -146,7 +146,7 @@
 						<div class="grid__col grid__col--12 d-flex justify-fe aligns-fs">
 							<span class="show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="moreoptions">Edit your options</span>
 						</div>
-						<nav class="dropdown-menu dropdown-menu--content" id="moreoptions"> 			
+						<nav class="dropdown-menu dropdown-menu--content" id="moreoptions">
 							<ul>
 								<li><a href="#">More Details</a></li>
 								<li><a href="#">View Report</a></li>
@@ -166,8 +166,8 @@
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="tasksdropdown">+</span>
 								</div>
 							</div>
-							
-							<nav class="dropdown-menu dropdown-menu--content" id="tasksdropdown"> 			
+
+							<nav class="dropdown-menu dropdown-menu--content" id="tasksdropdown">
 								<ul>
 									<li><a href="#">More Details</a></li>
 									<li><a href="#">View Activity</a></li>
@@ -194,7 +194,7 @@
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="newpatientsdropdown">+</span>
 								</div>
 							</div>
-							<nav class="dropdown-menu dropdown-menu--content" id="newpatientsdropdown"> 			
+							<nav class="dropdown-menu dropdown-menu--content" id="newpatientsdropdown">
 								<ul>
 									<li><a href="#">More Details</a></li>
 									<li><a href="#">View Patients</a></li>
@@ -221,7 +221,7 @@
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="alertdropdown">+</span>
 								</div>
 							</div>
-							<nav class="dropdown-menu dropdown-menu--content" id="alertdropdown"> 			
+							<nav class="dropdown-menu dropdown-menu--content" id="alertdropdown">
 								<ul>
 									<li><a href="#">More Details</a></li>
 									<li><a href="#">View Alerts</a></li>
@@ -268,7 +268,7 @@
 						<h5>Payments</h5>
 				</div>
 
-			</div>	
+			</div>
 			<div class="grid__row">
 				<div class="grid__col grid__col--23 grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row justify-sb">
@@ -280,7 +280,7 @@
 							<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="activitydropdown"></span>
 						</div>
 					</div>
-					<nav class="dropdown-menu dropdown-menu--content" id="activitydropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="activitydropdown">
 						<ul>
 							<li><a href="#">More Details</a></li>
 							<li><a href="#">View Activity</a></li>
@@ -300,7 +300,7 @@
 							<span class="show-more show-more--plus bg-gray10 color-gray600 has-dropdown" data-dropdown="newddropdown">+</span>
 						</div>
 					</div>
-					<nav class="dropdown-menu dropdown-menu--content" id="newddropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="newddropdown">
 						<ul>
 							<li><a href="#">Details</a></li>
 							<li><a href="#">Share</a></li>
@@ -315,7 +315,7 @@
 								<div class="table__cell color-blue">Cardiology	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd1"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -329,7 +329,7 @@
 								<div class="table__cell color-blue">Pathology 	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd2"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -337,14 +337,14 @@
 									</nav>
 								</div>
 							</div>
-							
+
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-2.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Maya Cooper</div>
 								<div class="table__cell color-blue">Gastroenterology</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd3"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -358,7 +358,7 @@
 								<div class="table__cell color-blue">Endocrinology	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd4"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -366,14 +366,14 @@
 									</nav>
 								</div>
 							</div>
-							
+
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-5.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Julia Henderson</div>
 								<div class="table__cell color-blue">Orthodontics</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd5"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -387,7 +387,7 @@
 								<div class="table__cell color-blue">Paediatrics</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd6"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6">
 										<ul>
 											<li><a href="#">View Profile</a></li>
 											<li><a href="#">Contact</a></li>
@@ -397,14 +397,14 @@
 							</div>
 
 						</div>
-						
+
 					</div>
 					<!-- TABLE end -->
 				</div>
 
 			</div>
-			
-			
+
+
 			<div class="grid__row grid__row--d-block">
 				<div class="grid__col grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row justify-sb">
@@ -417,7 +417,7 @@
 						</div>
 					</div>
 
-					<nav class="dropdown-menu dropdown-menu--content" id="upappointdropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="upappointdropdown">
 						<ul>
 							<li><a href="#">Last 7 days</a></li>
 							<li><a href="#">Last 2 weeks</a></li>
@@ -428,7 +428,7 @@
 					  <div class="appointments">
 					  	<div class="appointments__button--next swiper-button-next"></div>
 						<div class="appointments__button--prev swiper-button-prev"></div>
-					  
+
 						<div class="appointments__content swiper-wrapper">
 							  <div class="appointments__slide swiper-slide selected selected--blue">
 							       <div class="appointment__time" id="time-user1"></div>
@@ -437,7 +437,7 @@
 									<div class="appointment__header-details">
 										<div class="appointment__username">Patrick Alexander</div>
 										<div class="appointment__user-email"><a href="mailto:email@website.com">email@website.com</a></div>
-										
+
 									</div>
 								</div>
 								<div class="appointment__content">
@@ -451,7 +451,7 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 							        <div class="appointment__time" id="time-user2"></div>
 								<div class="appointment__header">
@@ -472,7 +472,7 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 								<div class="appointment__header">
 									<div class="appointment__thumb"><img src="images/avatar-3.jpg" alt="" title=""/></div>
@@ -493,7 +493,7 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 								<div class="appointment__header">
 									<div class="appointment__thumb"><img src="images/avatar-4.jpg" alt="" title=""/></div>
@@ -514,14 +514,14 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 								<div class="appointment__header">
 									<div class="appointment__thumb"><img src="images/avatar-5.jpg" alt="" title=""/></div>
 									<div class="appointment__header-details">
 										<div class="appointment__username">Sarah Smithson</div>
 										<div class="appointment__user-email"><a href="mailto:email@website.com">sarah@smitson.com</a></div>
-	
+
 									</div>
 								</div>
 								<div class="appointment__content">
@@ -535,7 +535,7 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 								<div class="appointment__header">
 									<div class="appointment__thumb"><img src="images/avatar-6.jpg" alt="" title=""/></div>
@@ -555,7 +555,7 @@
 									<button class="appointment__button appointment__button--cancel">Cancel</button>
 								</div>
 							  </div>
-							  
+
 							  <div class="appointments__slide swiper-slide">
 								<div class="appointment__header">
 									<div class="appointment__thumb"><img src="images/avatar-7.jpg" alt="" title=""/></div>
@@ -577,15 +577,15 @@
 							  </div>
 
 						</div>
-					
+
 
 					</div>
 				</div>
 			</div>
-			
 
-			
-			
+
+
+
 			<div class="grid__row">
 				<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-white mb0">
 					<div class="grid__row justify-sb">
@@ -597,7 +597,7 @@
 							<span class="show-more show-more--plus bg-gray10 color-gray600 has-dropdown" data-dropdown="calendardropdown">+</span>
 						</div>
 					</div>
-					<nav class="dropdown-menu dropdown-menu--content" id="calendardropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="calendardropdown">
 						<ul>
 							<li><a href="#">More Details</a></li>
 							<li><a href="#">View Report</a></li>
@@ -607,7 +607,7 @@
 					</nav>
 					<div id="taskscalendar"></div>
 				</div>
-				
+
 				<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-white mb0">
 					<div class="grid__row justify-sb">
 						<div class="grid__col grid__col--mb-12">
@@ -618,7 +618,7 @@
 							<span class="show-more show-more--ellipsis show-more--ellipsis-vertical has-dropdown" data-dropdown="diseasesdropdown"></span>
 						</div>
 					</div>
-					<nav class="dropdown-menu dropdown-menu--content" id="diseasesdropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="diseasesdropdown">
 						<ul>
 							<li><a href="#">More Details</a></li>
 							<li><a href="#">View Diseases</a></li>
@@ -638,7 +638,7 @@
 							<span class="show-more show-more--arrow color-gray600 has-dropdown" data-dropdown="reportsdropdown"></span>
 						</div>
 					</div>
-					<nav class="dropdown-menu dropdown-menu--content" id="reportsdropdown"> 			
+					<nav class="dropdown-menu dropdown-menu--content" id="reportsdropdown">
 						<ul>
 							<li><a href="#">More Details</a></li>
 							<li><a href="#">View Report</a></li>
@@ -652,56 +652,56 @@
 							<div class="table__row">
 								<div class="table__cell">Infectious disease.pdf</div>
 								<div class="table__cell"><a href="#" class="button button--small-table button--lightblue-bg">View</a></div>
-								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>		
+								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>
 							</div>
 							<div class="table__row">
 								<div class="table__cell">Paediatric.doc</div>
 								<div class="table__cell"><a href="#" class="button button--small-table button--lightblue-bg">View</a></div>
-								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>		
+								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>
 							</div>
 							<div class="table__row">
 								<div class="table__cell">Hepatology.pdf</div>
 								<div class="table__cell"><a href="#" class="button button--small-table button--lightblue-bg">View</a></div>
-								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>		
+								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>
 							</div>
 							<div class="table__row">
 								<div class="table__cell">General Surgery.doc</div>
 								<div class="table__cell"><a href="#" class="button button--small-table button--lightblue-bg">View</a></div>
-								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>		
+								<div class="table__cell"><a href="#" class="button button--small-table button--blue-bg">Download</a></div>
 							</div>
 						</div>
-						
+
 					</div>
 					<!-- TABLE end -->
 
 				</div>
 
 			</div>
-			
-	
+
+
 
 		</div>
 
 
 
 	</div>
-	
-   
+
+
 </div>  <!-- Wrap End -->
- 
+
 <div class="section section-panel" id="panel">
 	<div class="panel-resize"></div>
 	<div class="section-panel__content scrollbar-macosx">
-		
+
 
 		<div class="grid">
-			
-		        <div class="grid__row">	
+
+		        <div class="grid__row">
 				<div class="grid__col grid__col--padding">
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Settings Panel</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row align-c">
 						<div class="grid__col grid__col--mb-12 grid__col--margin">
@@ -758,7 +758,7 @@
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom radios</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -777,7 +777,7 @@
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom checkboxes</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -793,12 +793,12 @@
 							</div>
 						</div>
 					</div>
-					
+
 
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom Slider</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -815,29 +815,29 @@
 				</div>
 
 			</div>
-		</div> <!-- End of Grid -->	
+		</div> <!-- End of Grid -->
 	</div>
 </div>  <!-- End of right panel -->
- 
- 
- <!-- Modal - Appointment --> 
+
+
+ <!-- Modal - Appointment -->
 <div class="modal modal--appointment">
-		
+
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
-		  
+
 		<div class="modal__body">
 			<div class="modal__header">
 				<h2 class="modal__header-title">Make an appointment</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
+			<div class="modal__content">
+
 				<div class="grid">
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -897,7 +897,7 @@
 					<div class="grid__row  grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Appointment Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--mb-12 grid__col--margin">
@@ -917,7 +917,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Examination Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -965,37 +965,37 @@
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
-							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD APPOINTMENT" />	
+							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD APPOINTMENT" />
 						</div>
 					</div>
 				</div> <!-- End of Grid -->
 
-			</div> 
+			</div>
 
-			
-		</div>
 
 		</div>
- </div> 
- 
-  <!-- Modal - prescription --> 
+
+		</div>
+ </div>
+
+  <!-- Modal - prescription -->
 <div class="modal modal--prescription">
-		
+
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
-		  
+
 		<div class="modal__body">
 			<div class="modal__header">
 				<h2 class="modal__header-title">Make a prescription</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
+			<div class="modal__content">
+
 				<div class="grid">
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -1055,7 +1055,7 @@
 					<div class="grid__row  grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Prescription Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--mb-12 grid__col--margin">
@@ -1091,7 +1091,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Doctor Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -1118,38 +1118,38 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE PRESCRIPTION" />
-							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE &amp; PRINT" />								
+							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE &amp; PRINT" />
 						</div>
 					</div>
 				</div> <!-- End of Grid -->
 
-			</div> 
+			</div>
 
-			
-		</div>
 
 		</div>
- </div> 
- 
- 
-   <!-- Modal - reports --> 
+
+		</div>
+ </div>
+
+
+   <!-- Modal - reports -->
 <div class="modal modal--reports">
-		
+
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
-		  
+
 		<div class="modal__body">
 			<div class="modal__header">
 				<h2 class="modal__header-title">Generate report</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
+			<div class="modal__content">
+
 				<div class="grid">
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -1209,7 +1209,7 @@
 					<div class="grid__row  grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Report Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--mb-12 grid__col--margin">
@@ -1227,7 +1227,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Doctor Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -1253,19 +1253,19 @@
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
-							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="GENERATE REPORT" />							
+							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="GENERATE REPORT" />
 						</div>
 					</div>
 				</div> <!-- End of Grid -->
 
-			</div> 
+			</div>
 
-			
-		</div>
 
 		</div>
- </div> 
- 
+
+		</div>
+ </div>
+
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/Chart.min.js"></script>
 <script src="js/chartjs-plugin-style.min.js"></script>
