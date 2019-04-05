@@ -8,7 +8,7 @@ gradientStroke.addColorStop(1, "rgba(18, 216, 227, 1)");
 
 var gradientStroke2 = chartactivity.createLinearGradient(200, 0, 100, 0);
 gradientStroke2.addColorStop(0, "rgba(255, 92, 203, 1)");
-gradientStroke2.addColorStop(1, "rgba(253, 133, 168, 1)");    
+gradientStroke2.addColorStop(1, "rgba(253, 133, 168, 1)");
 
 var gradientFill = chartactivity.createLinearGradient(0, 0, 0, 350);
 gradientFill.addColorStop(0, "rgba(128, 182, 244, 0.5)");
@@ -21,9 +21,9 @@ gradientFill2.addColorStop(1, "rgba(255, 91, 204, 0)");
 var ActivityChart = new Chart(chartactivity, {
     type: 'line',
     data: {
-        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+        labels: ["JAN", "FEV", "MAR", "ABR", "MAI", "JUN", "JUL"],
         datasets: [{
-            label: "Consultations",
+            label: "Consultas",
             borderColor: gradientStroke,
             pointBorderColor: gradientStroke,
             pointBackgroundColor: "rgba(255, 255, 255, 1)",
@@ -38,7 +38,7 @@ var ActivityChart = new Chart(chartactivity, {
             borderWidth: 2,
             data: [40, 4, 31, 10, 34, 12, 48]
         },	{
-            label: "Patients",
+            label: "Pacientes",
             borderColor: gradientStroke2,
             pointBorderColor: gradientStroke2,
             pointBackgroundColor: "rgba(255, 255, 255, 1)",
@@ -55,7 +55,7 @@ var ActivityChart = new Chart(chartactivity, {
         }
 		]
     },
-    options: {          
+    options: {
         legend: {
             position: "top",
             labels: {
@@ -112,14 +112,14 @@ var DiseasesChart = new Chart(chartdiseases, {
             data: [45, 12, 75]
         }]
     },
-    options: {          
+    options: {
         legend: {
             position: "bottom",
             labels: {
                 boxWidth: 15,
 				padding: 15
             }
-			
+
         }
     }
 });
@@ -150,7 +150,7 @@ var ReportsChart = new Chart(chartreports, {
         }
 		]
     },
-    options: {          
+    options: {
         legend: {
             position: "top",
             labels: {
@@ -212,7 +212,7 @@ var CustomChart = new Chart(chartcustom, {
         }
 		]
     },
-    options: {          
+    options: {
         legend: {
             position: "top",
             labels: {
@@ -236,4 +236,3 @@ var CustomChart = new Chart(chartcustom, {
         }
     }
 });
-

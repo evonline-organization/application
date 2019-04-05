@@ -8,13 +8,13 @@
 <meta name="author" content="SmartTemplates" />
 <meta name="description" content="medikit admin dashboard" />
 <meta name="keywords" content="medical dashboard, HTML UI KIT, medikit" />
-<title>Medikit</title>
+<title>Evoline</title>
 <link rel="stylesheet" href="css/swiper.css">
 <link rel="stylesheet" href="css/jquery.scrollbar.css">
 <link rel="stylesheet" href="css/daterangepicker.css">
 <link rel="stylesheet" href="css/select2.css">
 <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
-<link rel="stylesheet" href="css/dashboard.min.css">
+<link rel="stylesheet" href="css/dashboard-custom.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
@@ -72,17 +72,17 @@
 
 			<div class="content-header__user content-header__dropdown">
 			    <div class="content-header__user-avatar content-header__dropdown-activate" data-dropdown="userdropdown">
-					<div class="content-header__user-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div>
-					<span class="content-header__user-name">Nathalie Roberts</span>
+					<div class="content-header__user-thumb"><img src="images/avatar-7.jpg" alt="" title=""/></div>
+					<span class="content-header__user-name">Luis Henrique</span>
 			    </div>
 				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--user-menu " id="userdropdown">
-				<h3 class="dropdown-menu__subtitle">User menu</h3>
+				<h3 class="dropdown-menu__subtitle">Menu</h3>
 				<ul>
-				    <li><a href="#">My profile</a></li>
-				    <li><a href="#">Activity</a></li>
-				    <li><a href="#">Switch account</a></li>
-				    <li><a href="#">Support</a></li>
-				    <li class="logout"><a href="#" class="button button--general button--red-border">Logout</a></li>
+				    <li><a href="#">Meu Perfil</a></li>
+				    <li><a href="#">Atividades</a></li>
+				    <li><a href="#">Trocar Conta</a></li>
+				    <li><a href="#">Suporte</a></li>
+				    <li class="logout"><a href="#" class="button button--general button--red-border">Sair</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -93,16 +93,16 @@
 					<span class="content-header__icon-bubble">6</span>
 				</div>
 				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--notifications-menu" id="notificationsdropdown">
-				<h3 class="dropdown-menu__subtitle">You have <strong>6</strong> notifications</h3>
+				<h3 class="dropdown-menu__subtitle">Você tem <strong>6</strong> notificações</h3>
 				<ul>
-					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>Michael D. kidney surgery <b class="task-time">today</b></li>
-					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>FLU Alert report generated <b class="task-time">today</b></li>
+					<li class="d-flex justify-sb"><span class="important">IMPORTANTE</span>Michael D. kidney cirurgia <b class="task-time">hoje</b></li>
+					<li class="d-flex justify-sb"><span class="important">IMPORTANTE</span>FLU Reportar Alertas <b class="task-time">hoje</b></li>
 
-					<li class="d-flex justify-sb"><span>Meeting with <strong>Dr. Joshua</strong> </span> <b class="task-time">tomorrow</b></li>
-					<li class="d-flex justify-sb"><span>Remember to create prescriptions for <strong>Alexander P.</strong></span> <b class="task-time">tomorrow</b></li>
-					<li class="d-flex justify-sb"><span><strong>Jada Sacks</strong> canceled the appointment at Cardiology, Dr. Michael V. </span> <b class="task-time">24 jan, 19</b></li>
-					<li class="d-flex justify-sb"><span>Sarah D. registered as new patient of <strong>Dr. George</strong> at Dermatology </span> <b class="task-time">28 jan, 19</b></li>
-					<li class="view-all"><a href="#" class="button button--general button--blue-border">View all</a></li>
+					<li class="d-flex justify-sb"><span>Reunião com <strong>Dr. Joshua</strong> </span> <b class="task-time">amanhã</b></li>
+					<li class="d-flex justify-sb"><span>Lembre-se de criar prescrições para <strong>Alexander P.</strong></span> <b class="task-time">amanhã</b></li>
+					<li class="d-flex justify-sb"><span><strong>Jada Sacks</strong> cancelou a consulta com Cardiologia, Dr. Michael V. </span> <b class="task-time">24 jan, 19</b></li>
+					<li class="d-flex justify-sb"><span>Sarah D. registrado como novo paciente de <strong>Dr. George</strong> o Dermatologista </span> <b class="task-time">28 jan, 19</b></li>
+					<li class="view-all"><a href="#" class="button button--general button--blue-border">Ver Todos</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -112,11 +112,11 @@
 					<img src="images/icons/icons-24-gray/submenu.png" alt="" title=""/>
 				</div>
 				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--quicklinks-menu" id="quicklinksdropdown">
-				<h3 class="dropdown-menu__subtitle">Quick links</h3>
+				<h3 class="dropdown-menu__subtitle">Links Rápidos</h3>
 				<ul>
-				        <li><a href="#">Add new doctor</a></li>
-					<li><a href="#">Add new patient</a></li>
-					<li><a href="#">Generate reports</a></li>
+				        <li><a href="#">Adicionar Novo Médico</a></li>
+					<li><a href="#">Adicionar Novo Paciente</a></li>
+					<li><a href="#">Gerar Relatório</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -125,9 +125,9 @@
 
 			<nav class="content-header__menu">
 				<ul>
-					<li class="appointment selected modal-toggle" data-openpopup="appointment"><a href="#">Make an appointment</a></li>
-					<li class="prescription modal-toggle" data-openpopup="prescription"><a href="#">Write a prescription</a></li>
-					<li class="reports modal-toggle" data-openpopup="reports"><a href="#">Generate report</a></li>
+					<li class="appointment selected modal-toggle" data-openpopup="appointment"><a href="#">Marcar Consulta</a></li>
+					<li class="prescription modal-toggle" data-openpopup="prescription"><a href="#">Escrever Prescrição</a></li>
+					<li class="reports modal-toggle" data-openpopup="reports"><a href="#">Gerar Relatório</a></li>
 				</ul>
 			</nav>
 
@@ -140,18 +140,17 @@
 				<div class="grid__col grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin grid__col--12">
-							<div class="dashboard-intro__title">Good morning, <span>Dr Roberts</span></div>
-							<div class="dashboard-intro__subtitle">Here are your important tasks, updates and alerts. You can set your in app preferences here.</div>
+							<div class="dashboard-intro__title">Bom dia, <span>Dr. Roberto</span></div>
+							<div class="dashboard-intro__subtitle">Aqui estão suas tarefas importantes, atualizações e alertas. Você pode definir suas preferências no aplicativo aqui.</div>
 						</div>
 						<div class="grid__col grid__col--12 d-flex justify-fe aligns-fs">
-							<span class="show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="moreoptions">Edit your options</span>
+							<span class="show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="moreoptions">Edite suas opções</span>
 						</div>
 						<nav class="dropdown-menu dropdown-menu--content" id="moreoptions">
 							<ul>
-								<li><a href="#">More Details</a></li>
-								<li><a href="#">View Report</a></li>
-								<li><a href="#">Edit Settings</a></li>
-								<li><a href="#">+ Add widget</a></li>
+								<li><a href="#">Mais Detalhes</a></li>
+								<li><a href="#">Ver Relatório</a></li>
+								<li><a href="#">Editar Configurações</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -159,8 +158,8 @@
 						<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-gray10 mb0">
 							<div class="grid__row justify-sb">
 								<div class="grid__col grid__col--mb-12">
-									<h3 class="grid__col-title">Important Tasks</h3>
-									<span class="grid__col-subtitle">TODAY 24, JAN 2019</span>
+									<h3 class="grid__col-title">Tarefas Importantes</h3>
+									<span class="grid__col-subtitle">HOJE 05, ABR 2019</span>
 								</div>
 								<div class="grid__col grid__col--mb-12 d-flex justify-fe">
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="tasksdropdown">+</span>
@@ -169,26 +168,25 @@
 
 							<nav class="dropdown-menu dropdown-menu--content" id="tasksdropdown">
 								<ul>
-									<li><a href="#">More Details</a></li>
-									<li><a href="#">View Activity</a></li>
-									<li><a href="#">Edit Settings</a></li>
-									<li><a href="#">+ Edit widget</a></li>
+									<li><a href="#">Mais Detalhes</a></li>
+									<li><a href="#">Ver Atividades</a></li>
+									<li><a href="#">Editar Configurações</a></li>
 								</ul>
 							</nav>
 							<div class="d-flex align-c">
 								<div class="info-nr info-nr--strong gradient-blue gradient-text">23</div>
 								<div class="info-details">
-								<p>3 URGENT</p>
-								<p>16 LESS URGENT</p>
-								<p>4 REQUIRED</p>
+								<p>3 URGENTES</p>
+								<p>16 MENOS URGENTES</p>
+								<p>4 OBRIGATÓRIO</p>
 								</div>
 							</div>
 						</div>
 						<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-gray10 mb0">
 							<div class="grid__row justify-sb">
 								<div class="grid__col grid__col--mb-12">
-									<h3 class="grid__col-title">New Patients</h3>
-									<span class="grid__col-subtitle">REGISTERED IN JANUARY</span>
+									<h3 class="grid__col-title">Novos Pacientes</h3>
+									<span class="grid__col-subtitle">REGISTRADOS EM MARÇO</span>
 								</div>
 								<div class="grid__col grid__col--mb-12 d-flex justify-fe">
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="newpatientsdropdown">+</span>
@@ -196,26 +194,25 @@
 							</div>
 							<nav class="dropdown-menu dropdown-menu--content" id="newpatientsdropdown">
 								<ul>
-									<li><a href="#">More Details</a></li>
-									<li><a href="#">View Patients</a></li>
-									<li><a href="#">Edit Settings</a></li>
-									<li><a href="#">+ Edit widget</a></li>
+									<li><a href="#">Mais Detalhes</a></li>
+									<li><a href="#">Ver Atividades</a></li>
+									<li><a href="#">Editar Configurações</a></li>
 								</ul>
 							</nav>
 							<div class="d-flex align-c">
 								<div class="info-nr info-nr--strong gradient-lightblue gradient-text">15</div>
 								<div class="info-details">
-								<p>1 PREGNANCY</p>
-								<p>10 DIABETIS</p>
-								<p>14 KIDS</p>
+								<p>1 EM GESTAÇÃO</p>
+								<p>10 PACIENTES DIABÉTICOS</p>
+								<p>14 CRIANÇAS</p>
 								</div>
 							</div>
 						</div>
 						<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-gray10 mb0">
 							<div class="grid__row justify-sb">
 								<div class="grid__col grid__col--mb-12">
-									<h3 class="grid__col-title">Alert</h3>
-									<span class="grid__col-subtitle">LAST MONTH</span>
+									<h3 class="grid__col-title">Alerta</h3>
+									<span class="grid__col-subtitle">ÚLTIMO MÊS</span>
 								</div>
 								<div class="grid__col grid__col--mb-12 d-flex justify-fe">
 									<span class="show-more show-more--plus bg-white color-gray600 has-dropdown" data-dropdown="alertdropdown">+</span>
@@ -223,16 +220,15 @@
 							</div>
 							<nav class="dropdown-menu dropdown-menu--content" id="alertdropdown">
 								<ul>
-									<li><a href="#">More Details</a></li>
-									<li><a href="#">View Alerts</a></li>
-									<li><a href="#">Edit Settings</a></li>
-									<li><a href="#">+ Edit widget</a></li>
+									<li><a href="#">Mais Detalhes</a></li>
+									<li><a href="#">Ver Atividades</a></li>
+									<li><a href="#">Editar Configurações</a></li>
 								</ul>
 							</nav>
 							<div class="d-flex align-c">
 								<div class="info-nr info-nr--strong gradient-pink gradient-text">48</div>
 								<div class="info-details">
-								<p>New flue cases registered all over the states with potential longer number.</p>
+								<p>Novos casos de gripe registrados em todos os estados com potencial maior número.</p>
 								</div>
 							</div>
 						</div>
@@ -241,31 +237,31 @@
 			</div>
 			<div class="grid__row">
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding gradient-blue widget-icon selected">
-						<span class="widget-icon__badge">3 NEW</span>
+						<span class="widget-icon__badge">3 NOVAS</span>
 						<img src="images/icons/icons-64-white/chat.png" alt="" title=""/>
-						<h5>Active Conversations</h5>
+						<h5>Conversas com Pacientes</h5>
 				</div>
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding gradient-lightblue widget-icon selected">
-						<span class="widget-icon__badge">14 NEW</span>
+						<span class="widget-icon__badge">14 NOVOS</span>
 						<img src="images/icons/icons-64-white/laboratory.png" alt="" title=""/>
-						<h5>Laboratory Results</h5>
+						<h5>Resultados de Exames</h5>
 				</div>
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding gradient-pink widget-icon selected">
-						<span class="widget-icon__badge">2 NEW</span>
+						<span class="widget-icon__badge">2 NOVOS</span>
 						<img src="images/icons/icons-64-white/calendar.png" alt="" title=""/>
-						<h5>New Events</h5>
+						<h5>Novos Eventos</h5>
 				</div>
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding bg-white widget-icon">
 						<img src="images/icons/icons-64-blue/users.png" alt="" title=""/>
-						<h5>Important Patients</h5>
+						<h5>Pacientes Importantes</h5>
 				</div>
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding bg-white widget-icon">
 						<img src="images/icons/icons-64-blue/reports.png" alt="" title=""/>
-						<h5>Reports Archive</h5>
+						<h5>Relatórios Arquivados</h5>
 				</div>
 				<div class="grid__col grid__col--16 grid__col--mb-12 grid__col--margin grid__col--padding bg-white widget-icon">
 						<img src="images/icons/icons-64-blue/payments.png" alt="" title=""/>
-						<h5>Payments</h5>
+						<h5>Pagamentos</h5>
 				</div>
 
 			</div>
@@ -273,8 +269,8 @@
 				<div class="grid__col grid__col--23 grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row justify-sb">
 						<div class="grid__col grid__col--mb-12">
-							<h3 class="grid__col-title">Activity</h3>
-							<span class="grid__col-subtitle">LAST YEAR</span>
+							<h3 class="grid__col-title">Atividade</h3>
+							<span class="grid__col-subtitle">Último Ano</span>
 						</div>
 						<div class="grid__col grid__col--mb-12 d-flex justify-fe">
 							<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="activitydropdown"></span>
@@ -282,10 +278,9 @@
 					</div>
 					<nav class="dropdown-menu dropdown-menu--content" id="activitydropdown">
 						<ul>
-							<li><a href="#">More Details</a></li>
-							<li><a href="#">View Activity</a></li>
-							<li><a href="#">Edit Settings</a></li>
-							<li><a href="#">+ Add widget</a></li>
+							<li><a href="#">Mais Detalhes</a></li>
+							<li><a href="#">Ver Atividades</a></li>
+							<li><a href="#">Editar Configurações</a></li>
 						</ul>
 					</nav>
 					<canvas id="ActivityChart" width="100%" height="40"></canvas>
@@ -293,8 +288,8 @@
 				<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row justify-sb">
 						<div class="grid__col grid__col--mb-12">
-							<h3 class="grid__col-title">Recent Patients</h3>
-							<span class="grid__col-subtitle">LAST WEEK</span>
+							<h3 class="grid__col-title">Pacientes Recentes</h3>
+							<span class="grid__col-subtitle">ÚLTIMA SEMANA</span>
 						</div>
 						<div class="grid__col grid__col--mb-12 d-flex justify-fe">
 							<span class="show-more show-more--plus bg-gray10 color-gray600 has-dropdown" data-dropdown="newddropdown">+</span>
@@ -302,9 +297,9 @@
 					</div>
 					<nav class="dropdown-menu dropdown-menu--content" id="newddropdown">
 						<ul>
-							<li><a href="#">Details</a></li>
-							<li><a href="#">Share</a></li>
-							<li><a href="#">Settings</a></li>
+							<li><a href="#">Detalhes</a></li>
+							<li><a href="#">Compartilhar</a></li>
+							<li><a href="#">Configurações</a></li>
 						</ul>
 					</nav>
 					<div class="table table--no-header table--new-doctors">
@@ -312,13 +307,13 @@
 							<div class="table__row selected">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-3.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Olivia Wilson</div>
-								<div class="table__cell color-blue">Cardiology	</div>
+								<div class="table__cell color-blue">Cardiologista	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd1"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -326,13 +321,13 @@
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-1.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Oliver Barnes</div>
-								<div class="table__cell color-blue">Pathology 	</div>
+								<div class="table__cell color-blue">Hematologista 	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd2"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -341,13 +336,13 @@
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-2.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Maya Cooper</div>
-								<div class="table__cell color-blue">Gastroenterology</div>
+								<div class="table__cell color-blue">Gastrointestinal</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd3"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -355,13 +350,13 @@
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-4.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Adam King</div>
-								<div class="table__cell color-blue">Endocrinology	</div>
+								<div class="table__cell color-blue">Endocrinologista	</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd4"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -370,13 +365,13 @@
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-5.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Julia Henderson</div>
-								<div class="table__cell color-blue">Orthodontics</div>
+								<div class="table__cell color-blue">Oncologista</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd5"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -384,13 +379,13 @@
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb avatar-thumb--table"><img src="images/avatar-6.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Sienna Butler</div>
-								<div class="table__cell color-blue">Paediatrics</div>
+								<div class="table__cell color-blue">Obstetra</div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd6"></span>
 									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6">
 										<ul>
-											<li><a href="#">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
+											<li><a href="#">Ver Perfil</a></li>
+											<li><a href="#">Contato</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -409,20 +404,19 @@
 				<div class="grid__col grid__col--margin grid__col--padding bg-white">
 					<div class="grid__row justify-sb">
 						<div class="grid__col grid__col--mb-12">
-							<h3 class="grid__col-title">Upcoming Appointments</h3>
-							<span class="grid__col-subtitle">01 FEBRUARY - 31 MARCH 2019</span>
+							<h3 class="grid__col-title">Próximas Consultas</h3>
+							<span class="grid__col-subtitle">01 FEVEREIRO - 31 MARÇO 2019</span>
 						</div>
 						<div class="grid__col grid__col--mb-12 d-flex justify-fe aligns-fs">
-							<span class="show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="upappointdropdown">Select Period</span>
+							<span class="show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="upappointdropdown">Selecione o Período</span>
 						</div>
 					</div>
 
 					<nav class="dropdown-menu dropdown-menu--content" id="upappointdropdown">
 						<ul>
-							<li><a href="#">Last 7 days</a></li>
-							<li><a href="#">Last 2 weeks</a></li>
-							<li><a href="#">Last month</a></li>
-							<li><a href="#">+ Custom</a></li>
+							<li><a href="#">Últimos 7 Dias</a></li>
+							<li><a href="#">Últimas 2 Semanas</a></li>
+							<li><a href="#">Último Mês</a></li>
 						</ul>
 					</nav>
 					  <div class="appointments">
@@ -441,14 +435,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Dermatology, Dr. Joshua A.</div>
+								        <div class="appointment__info-content icon-doctor">Dermatologista, Dr. Joshua A.</div>
 									<div class="appointment__info-content icon-location">54 Medical Center, Room 34</div>
-									<div class="appointment__info-content icon-calendar">Tuesday, February 09, 2019</div>
+									<div class="appointment__info-content icon-calendar">Terça, 09 de Fevereiro, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>10:00 - 10:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -462,14 +456,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Cardiology, Dr. Michael V.</div>
+								        <div class="appointment__info-content icon-doctor">Cardiologista, Dr. Michael V.</div>
 									<div class="appointment__info-content icon-location">T600 Medical Center, Room 2</div>
-									<div class="appointment__info-content icon-calendar">Wednesday, February 18, 2019</div>
+									<div class="appointment__info-content icon-calendar">Terça e Quinta, 18 de Fevereiro, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>08:00 - 09:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -483,14 +477,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Gastroenterology, Dr. Joshua A.</div>
+								        <div class="appointment__info-content icon-doctor">Gastrointestinal, Dr. Joshua A.</div>
 									<div class="appointment__info-content icon-location">54 Medical Center, Room 34</div>
-									<div class="appointment__info-content icon-calendar">Friday, February 09, 2019</div>
+									<div class="appointment__info-content icon-calendar">Quinta e Sexta 09 de Fevereiro, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>10:00 - 10:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -504,14 +498,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Endocrinology, Dr. Joshua A.</div>
+								        <div class="appointment__info-content icon-doctor">Endocrinologista, Dr. Joshua A.</div>
 									<div class="appointment__info-content icon-location">83 Medical Center, Room 01</div>
 									<div class="appointment__info-content icon-calendar">Wednesday, February 28, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>09:30 - 10:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -525,14 +519,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Orthodontics, Dr. Victoria B.</div>
+								        <div class="appointment__info-content icon-doctor">Oncologista, Dr. Victoria B.</div>
 									<div class="appointment__info-content icon-location">54 Medical Center, Room 34</div>
 									<div class="appointment__info-content icon-calendar">Monday, February 28, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>10:00 - 10:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -545,14 +539,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Neonatology, Dr. Alexa A.</div>
+								        <div class="appointment__info-content icon-doctor">Obstetra, Dr. Alexa A.</div>
 									<div class="appointment__info-content icon-location">54 Medical Center, Room 34</div>
 									<div class="appointment__info-content icon-calendar">Tuesday, March 01, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>10:00 - 10:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -565,14 +559,14 @@
 									</div>
 								</div>
 								<div class="appointment__content">
-								        <div class="appointment__info-content icon-doctor">Psychiatry, Dr. Aby D.</div>
+								        <div class="appointment__info-content icon-doctor">Psiquiatra, Dr. Aby D.</div>
 									<div class="appointment__info-content icon-location">Main Hospital Center, Room 12, 3'rd fl</div>
 									<div class="appointment__info-content icon-calendar">Friday, March 12, 2019</div>
 									<div class="appointment__info-content icon-clock"><strong>14:00 - 15:30</strong></div>
 								</div>
 								<div class="appointment__buttons">
-									<button class="appointment__button appointment__button--confirm">Confirm</button>
-									<button class="appointment__button appointment__button--cancel">Cancel</button>
+									<button class="appointment__button appointment__button--confirm">Confirmar</button>
+									<button class="appointment__button appointment__button--cancel">Cancelar</button>
 								</div>
 							  </div>
 
@@ -585,8 +579,8 @@
 
 
 
-
-			<div class="grid__row">
+			<!-- NÃO APARECERÁ NA INTERFACE, PORÉM NÃO APAGUE! -->
+			<div class="grid__row" style="display:none;">
 				<div class="grid__col grid__col--13 grid__col--margin grid__col--padding bg-white mb0">
 					<div class="grid__row justify-sb">
 						<div class="grid__col grid__col--mb-12">
@@ -828,7 +822,7 @@
 
 		<div class="modal__body">
 			<div class="modal__header">
-				<h2 class="modal__header-title">Make an appointment</h2>
+				<h2 class="modal__header-title">Marcar Consulta</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
 			<div class="modal__content">
