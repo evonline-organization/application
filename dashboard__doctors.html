@@ -8,181 +8,180 @@
 <meta name="author" content="SmartTemplates" />
 <meta name="description" content="medikit admin dashboard" />
 <meta name="keywords" content="medical dashboard, HTML UI KIT, medikit" />
-<title>Medikit</title>
+<title>Evoline</title>
 <link rel="stylesheet" href="css/daterangepicker.css">
 <link rel="stylesheet" href="css/select2.css">
 <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
-<link rel="stylesheet" href="css/dashboard.min.css">
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet"> 
+<link rel="stylesheet" href="css/dashboard-custom.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 </head>
 <body>
 
 <div class="dashboard-wrap">
 
 	<header class="sidebar-header">
-		<h1 class="sidebar-header__logo">m<span>edi<strong>kit</strong></span></h1>
+		<h1 class="sidebar-header__logo">e<span>vo<strong>line</strong></span></h1>
 	</header>
-	
+
 	<!-- Section sidebar -->
 	<div class="section section--sidebar" id="sidebar">
-	
-			<nav class="sidebar-menu"> 
-				<ul>
-					<li class="dashboard"><a href="dashboard.html"><b>Dashboard</b></a></li>
-					<li class="components has-submenu"><a href="#"><b>Components<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__grid.html">Grid</a></li>	
-							<li><a href="dashboard__charts.html">Charts</a></li>
-							<li><a href="dashboard__forms.html">Forms</a></li>
-							<li><a href="dashboard__tabs.html">Tabs</a></li>
-							<li><a href="dashboard__toggles.html">Toggles</a></li>
-							<li><a href="dashboard__tables.html">Tables</a></li>
-							<li><a href="dashboard__typography.html">Typography</a></li>
-						</ul>
-					</li>
-					<li class="appointment"><a href="dashboard__appointments.html"><b>Appointments</b></a></li>
-					<li class="doctors has-submenu"><a href="#"><b>Doctors<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__doctors-add.html">Add new doctor</a></li>
-							<li><a href="dashboard__doctors.html">View all doctors</a></li>
-						</ul>
-					</li>
-					<li class="patients has-submenu"><a href="#"><b>Patients<span class="submenu-arrow"></span></b></a>
-						<ul class="sidebar-menu__submenu">
-							<li><a href="dashboard__patients-add.html">Add new patient</a></li>
-							<li><a href="dashboard__patients.html">View all patients</a></li>
-							<li><a href="dashboard__patient.html">Patient profile</a></li>
-						</ul>
-					</li>		
-					<li class="inbox"><a href="dashboard__messages.html"><b>Messages<span class="submenu-bubble">3</span></b></a></li>
-					<li class="settings"><a href="#"><b>Settings</b></a></li>
-				</ul>
-			</nav>
-	
+
+		<nav class="sidebar-menu">
+			<ul>
+				<li class="doctors has-submenu"><a href="#"><b>Médico<span class="submenu-arrow"></span></b></a>
+					<ul class="sidebar-menu__submenu">
+						<li><a href="dashboard__doctors-add.html">Novo Médico</a></li>
+						<li><a href="dashboard__doctors.html">Ver Todos os Médicos</a></li>
+					</ul>
+				</li>
+				<li class="patients has-submenu"><a href="#"><b>Paciente<span class="submenu-arrow"></span></b></a>
+					<ul class="sidebar-menu__submenu">
+						<li><a href="dashboard__patients-add.html">Novo Paciente</a></li>
+						<li><a href="dashboard__patients.html">Ver Todos os Pacientes</a></li>
+						<li><a href="dashboard__patient.html">Prontuário</a></li>
+					</ul>
+				</li>
+				<li class="appointment"><a href="dashboard__appointments.html"><b>Consultas</b></a></li>
+				<li class="components has-submenu"><a href="#"><b>Técnico<span class="submenu-arrow"></span></b></a>
+					<ul class="sidebar-menu__submenu">
+						<li><a href="dashboard__grid.html">Grid</a></li>
+						<li><a href="dashboard__charts.html">Charts</a></li>
+						<li><a href="dashboard__forms.html">Forms</a></li>
+						<li><a href="dashboard__tabs.html">Tabs</a></li>
+						<li><a href="dashboard__toggles.html">Toggles</a></li>
+						<li><a href="dashboard__tables.html">Tables</a></li>
+						<li><a href="dashboard__typography.html">Typography</a></li>
+					</ul>
+				</li>
+				<li class="dashboard"><a href="dashboard.html"><b>Painel de Controle</b></a></li>
+				<li class="settings"><a href="#"><b>Configurações</b></a></li>
+				<li class="inbox"><a href="dashboard__messages.html"><b>Mensagens<span class="submenu-bubble">3</span></b></a></li>
+			</ul>
+		</nav>
+
 	</div>
-	
+
 	<!-- Section sidebar -->
 	<div class="section section--content" id="content">
 		<header class="content-header">
-		
+
 			<div class="sidebar-resize"></div>
 			<div class="mobile-menu"><div class="st-burger-icon st-burger-icon--medium"><span></span></div></div>
-			
-			<div class="content-header__user content-header__dropdown">  
+
+			<div class="content-header__user content-header__dropdown">
 			    <div class="content-header__user-avatar content-header__dropdown-activate" data-dropdown="userdropdown">
-					<div class="content-header__user-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div>
-					<span class="content-header__user-name">Nathalie Roberts</span>
-			    </div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--user-menu " id="userdropdown"> 	
-				<h3 class="dropdown-menu__subtitle">User menu</h3>
-				<ul>   
-				    <li><a href="#">My profile</a></li>
-				    <li><a href="#">Activity</a></li>
-				    <li><a href="#">Switch account</a></li>
-				    <li><a href="#">Support</a></li>
-				    <li class="logout"><a href="#" class="button button--general button--red-border">Logout</a></li>
+					<div class="content-header__user-thumb"><img src="images/avatar-7.jpg" alt="" title=""/></div>
+					<span class="content-header__user-name">Luis Henrique</span>
+			    </div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--user-menu " id="userdropdown">
+				<h3 class="dropdown-menu__subtitle">Menu</h3>
+				<ul>
+				    <li><a href="#">Meu Perfil</a></li>
+				    <li><a href="#">Atividades</a></li>
+				    <li><a href="#">Trocar Conta</a></li>
+				    <li><a href="#">Suporte</a></li>
+				    <li class="logout"><a href="#" class="button button--general button--red-border">Sair</a></li>
 				</ul>
 				</nav>
 			</div>
-			
-			<div class="content-header__notifications content-header__dropdown">  
+
+			<div class="content-header__notifications content-header__dropdown">
 			    <div class="content-header__notifications-icon content-header__icon content-header__dropdown-activate" data-dropdown="notificationsdropdown">
 					<img src="images/icons/icons-24-gray/notifications.png" alt="" title=""/>
 					<span class="content-header__icon-bubble">6</span>
-				</div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--notifications-menu" id="notificationsdropdown"> 			
-				<h3 class="dropdown-menu__subtitle">You have <strong>6</strong> notifications</h3>
-				<ul>    
-					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>Michael D. kidney surgery <b class="task-time">today</b></li>
-					<li class="d-flex justify-sb"><span class="important">IMPORTANT</span>FLU Alert report generated <b class="task-time">today</b></li>
-					
-					<li class="d-flex justify-sb"><span>Meeting with <strong>Dr. Joshua</strong> </span> <b class="task-time">tomorrow</b></li>
-					<li class="d-flex justify-sb"><span>Remember to create prescriptions for <strong>Alexander P.</strong></span> <b class="task-time">tomorrow</b></li>
-					<li class="d-flex justify-sb"><span><strong>Jada Sacks</strong> canceled the appointment at Cardiology, Dr. Michael V. </span> <b class="task-time">24 jan, 19</b></li>
-					<li class="d-flex justify-sb"><span>Sarah D. registered as new patient of <strong>Dr. George</strong> at Dermatology </span> <b class="task-time">28 jan, 19</b></li>
-					<li class="view-all"><a href="#" class="button button--general button--blue-border">View all</a></li>
+				</div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--notifications-menu" id="notificationsdropdown">
+				<h3 class="dropdown-menu__subtitle">Você tem <strong>6</strong> notificações</h3>
+				<ul>
+					<li class="d-flex justify-sb"><span class="important">IMPORTANTE</span>Michael D. kidney cirurgia <b class="task-time">hoje</b></li>
+					<li class="d-flex justify-sb"><span class="important">IMPORTANTE</span>FLU Reportar Alertas <b class="task-time">hoje</b></li>
+
+					<li class="d-flex justify-sb"><span>Reunião com <strong>Dr. Joshua</strong> </span> <b class="task-time">amanhã</b></li>
+					<li class="d-flex justify-sb"><span>Lembre-se de criar prescrições para <strong>Alexander P.</strong></span> <b class="task-time">amanhã</b></li>
+					<li class="d-flex justify-sb"><span><strong>Jada Sacks</strong> cancelou a consulta com Cardiologia, Dr. Michael V. </span> <b class="task-time">24 jan, 19</b></li>
+					<li class="d-flex justify-sb"><span>Sarah D. registrado como novo paciente de <strong>Dr. George</strong> o Dermatologista </span> <b class="task-time">28 jan, 19</b></li>
+					<li class="view-all"><a href="#" class="button button--general button--blue-border">Ver Todos</a></li>
 				</ul>
 				</nav>
 			</div>
-			
-			<div class="content-header__quicklinks content-header__dropdown">  
+
+			<div class="content-header__quicklinks content-header__dropdown">
 			        <div class="content-header__quicklinks-icon content-header__icon content-header__dropdown-activate" data-dropdown="quicklinksdropdown">
 					<img src="images/icons/icons-24-gray/submenu.png" alt="" title=""/>
-				</div>  
-				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--quicklinks-menu" id="quicklinksdropdown"> 	
-				<h3 class="dropdown-menu__subtitle">Quick links</h3>				
+				</div>
+				<nav class="dropdown-menu dropdown-menu--header dropdown-menu--quicklinks-menu" id="quicklinksdropdown">
+				<h3 class="dropdown-menu__subtitle">Quick links</h3>
 				<ul>
-				        <li><a href="#">Add new doctor</a></li>
-					<li><a href="#">Add new patient</a></li>
-					<li><a href="#">Generate reports</a></li>
+				  <li><a href="#">Adicionar Novo Médico</a></li>
+					<li><a href="#">Adicionar Novo Paciente</a></li>
+					<li><a href="#">Gerar Relatório</a></li>
 				</ul>
 				</nav>
 			</div>
-			
+
 			<div class="mobile-submenu"></div>
 
-			<nav class="content-header__menu">       
+			<nav class="content-header__menu">
 				<ul>
-					<li class="user selected"><a href="dashboard__doctors-add.html">Add new doctor</a></li>
-					<li class="prescription modal-toggle" data-openpopup="prescription"><a href="#">Write a prescription</a></li>
-					<li class="reports modal-toggle" data-openpopup="reports"><a href="#">Generate report</a></li>
+					<li class="appointment selected modal-toggle" data-openpopup="appointment"><a href="#">Marcar Consulta</a></li>
+				  <!--<li class="prescription modal-toggle" data-openpopup="prescription"><a href="#">Escrever Prescrição</a></li>-->
+					<li class="reports modal-toggle" data-openpopup="reports"><a href="#">Gerar Relatório</a></li>
 				</ul>
 			</nav>
-			
+
 		</header>
 		<div class="content-subheader">
-		
+
 			<div class="content-subheader__titles">
-					<h2 class="content-subheader__title">Doctors</h2>
-					<nav class="content-subheader__breadcrumb-menu">			
+					<h2 class="content-subheader__title">Médicos</h2>
+					<nav class="content-subheader__breadcrumb-menu">
 							<ul>
-								<li><a href="dashboard.html">Dashboard</a></li>
+								<li><a href="dashboard.html">Painel de Controle</a></li>
 							</ul>
 					</nav>
 			</div>
-			
-			
+
+
 			<div class="content-subheader__options">
-			
+
 					<div class="content-subheader__search">
 						<form>
 							<input type="text" class="subheader-search__input" id="" name="" value="" placeholder="Search patient" />
 							<input type="submit" class="subheader-search__submit" value="Search" />
 						</form>
 					</div>
-					
+
 					<div class="content-subheader__dropdown">
 						<span class="content-subheader__more show-more show-more--select show-more--select-gray has-dropdown" data-dropdown="moreoptions">Filter Options</span>
-						<nav class="dropdown-menu dropdown-menu--content dropdown-menu--subheader" id="moreoptions"> 			
+						<nav class="dropdown-menu dropdown-menu--content dropdown-menu--subheader" id="moreoptions">
 							<ul>
-								<li><a href="#">By Date</a></li>
-								<li><a href="#">By Name</a></li>
-								<li><a href="#">By Date of birth</a></li>
-								<li><a href="#">+ Add filter</a></li>
+								<li><a href="#">Por Data</a></li>
+								<li><a href="#">Por Nome</a></li>
+								<li><a href="#">Pela Data de Nascimento</a></li>
 							</ul>
 						</nav>
 					</div>
-			
-			</div>
-			
-		</div>
-		
 
-		
+			</div>
+
+		</div>
+
+
+
 		<div class="grid grid--margin">
-			
+
 			<div class="grid__row">
 				<div class="grid__col grid__col--padding bg-white">
 					<div class="table table--patients">
 						<div class="table__header">
 							<div class="table__row">
 								<div class="table__cell"></div>
-								<div class="table__cell">NAME</div>
-								<div class="table__cell">GENDER</div>
-								<div class="table__cell">SPECIALIZATION</div>
+								<div class="table__cell">NOME</div>
+								<div class="table__cell">GÊNERO</div>
+								<div class="table__cell">ESPECIALIZAÇÃO</div>
 								<div class="table__cell">EMAIL</div>
-								<div class="table__cell">PHONE</div>
-								<div class="table__cell">ADRESS</div>
+								<div class="table__cell">TELEFONE</div>
+								<div class="table__cell">ENDEREÇO</div>
 								<div class="table__cell"></div>
 								<div class="table__cell"></div>
 							</div>
@@ -196,14 +195,14 @@
 								<div class="table__cell">olivia@wilson.com</div>
 								<div class="table__cell">+47 789 526 2222</div>
 								<div class="table__cell">Toronto, Canada</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd1"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd1">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -216,19 +215,19 @@
 								<div class="table__cell">oliver@barnes.com</div>
 								<div class="table__cell">+33 555 526 1111</div>
 								<div class="table__cell">Barcelona, Spain</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd2"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd2">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							
+
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-2.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Dr. Maya Cooper</div>
@@ -237,14 +236,14 @@
 								<div class="table__cell">maya@cooper.com</div>
 								<div class="table__cell">+47 789 526 2222</div>
 								<div class="table__cell">Berlin, Germany</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd3"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd3">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -257,19 +256,19 @@
 								<div class="table__cell">adam@king.com</div>
 								<div class="table__cell">+45 111 526 6789</div>
 								<div class="table__cell">Paris, France</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd4"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd4">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							
+
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-5.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Dr. Julia Henderson</div>
@@ -278,14 +277,14 @@
 								<div class="table__cell">julia@henderson.com</div>
 								<div class="table__cell">+47 333 526 2222</div>
 								<div class="table__cell">Tokyo, Japan</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd5"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -298,19 +297,19 @@
 								<div class="table__cell">sienna@butler.com</div>
 								<div class="table__cell">+47 789 526 2222</div>
 								<div class="table__cell">New York, USA</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd6"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
-							
+
 							<div class="table__row">
 								<div class="table__cell"><div class="avatar-thumb"><img src="images/avatar-7.jpg" alt="" title=""/></div></div>
 								<div class="table__cell">Dr. Robert Davis</div>
@@ -319,14 +318,14 @@
 								<div class="table__cell">robert@davis.com</div>
 								<div class="table__cell">+35 333 526 2222</div>
 								<div class="table__cell">Amsterdam, Hollan</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd5"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd5">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -339,14 +338,14 @@
 								<div class="table__cell">billy@ross.com</div>
 								<div class="table__cell">+47 789 526 2222</div>
 								<div class="table__cell">Los Angeles, USA</div>
-								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Appointment</a></div>
+								<div class="table__cell"><a href="#" class="button button--general button--inline button--blue-bg modal-toggle" data-openpopup="appointment">+ Consulta</a></div>
 								<div class="table__cell">
 									<span class="show-more show-more--ellipsis has-dropdown" data-dropdown="dropd6"></span>
-									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6"> 			
+									<nav class="dropdown-menu dropdown-menu--content dropdown-menu--table" id="dropd6">
 										<ul>
-											<li><a href="dashboard__patient-profile.html">View Profile</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Delete</a></li>
+											<li><a href="dashboard__patient-profile.html">Ver Perfil</a></li>
+											<li><a href="#">Contactar</a></li>
+											<li><a href="#">Deletar</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -354,13 +353,13 @@
 
 
 						</div>
-						
+
 					</div>
 					<!-- TABLE end -->
 				</div>
 
 			</div>
-			
+
 			<div class="grid__row">
 				<div class="grid__col grid__col--padding bg-white">
 					<ul class="pagination">
@@ -369,7 +368,7 @@
 						 <li><a href="#">3</a></li>
 						 <li><a href="#">4</a></li>
 						 <li><a href="#">5</a></li>
-						 <li><a href="#">NEXT</a></li>
+						 <li><a href="#">PRÓXIMO</a></li>
 					</ul>
 				</div>
 			</div>
@@ -379,22 +378,22 @@
 
 
 	</div>
-	
+
 </div> <!-- Wrap end -->
 
 <div class="section section-panel" id="panel">
 	<div class="panel-resize"></div>
 	<div class="section-panel__content scrollbar-macosx">
-		
+
 
 		<div class="grid">
-			
-		        <div class="grid__row">	
+
+		        <div class="grid__row">
 				<div class="grid__col grid__col--padding">
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
-							<h3 class="grid__col-title">Settings Panel</h3>
-						</div>		
+							<h3 class="grid__col-title">Configurações</h3>
+						</div>
 					</div>
 					<div class="grid__row align-c">
 						<div class="grid__col grid__col--12 grid__col--margin">
@@ -451,7 +450,7 @@
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom radios</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -470,7 +469,7 @@
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom checkboxes</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -486,12 +485,12 @@
 							</div>
 						</div>
 					</div>
-					
+
 
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Custom Slider</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row">
 						<div class="grid__col grid__col--margin">
@@ -508,28 +507,28 @@
 				</div>
 
 			</div>
-		</div> <!-- End of Grid -->	
+		</div> <!-- End of Grid -->
 	</div>
 </div>  <!-- End of right panel -->
 
-  <!-- Modal - Appointment --> 
+  <!-- Modal - Appointment -->
 <div class="modal modal--appointment">
-		
+
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
-		  
+
 		<div class="modal__body">
 			<div class="modal__header">
 				<h2 class="modal__header-title">Make an appointment</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
+			<div class="modal__content">
+
 				<div class="grid">
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -589,7 +588,7 @@
 					<div class="grid__row  grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Appointment Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--12 grid__col--margin">
@@ -609,7 +608,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Examination Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -657,37 +656,37 @@
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
-							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD APPOINTMENT" />	
+							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="ADD APPOINTMENT" />
 						</div>
 					</div>
 				</div> <!-- End of Grid -->
 
-			</div> 
+			</div>
 
-			
-		</div>
 
 		</div>
- </div> 
- 
-  <!-- Modal - prescription --> 
+
+		</div>
+ </div>
+
+  <!-- Modal - prescription -->
 <div class="modal modal--prescription">
-		
+
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
-		  
+
 		<div class="modal__body">
 			<div class="modal__header">
 				<h2 class="modal__header-title">Make a prescription</h2>
 				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
+			<div class="modal__content">
+
 				<div class="grid">
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -747,7 +746,7 @@
 					<div class="grid__row  grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Prescription Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--12 grid__col--margin">
@@ -783,7 +782,7 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<h3 class="grid__col-title">Doctor Information</h3>
-						</div>		
+						</div>
 					</div>
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--13 grid__col--margin">
@@ -810,153 +809,153 @@
 					<div class="grid__row grid__row--margin">
 						<div class="grid__col grid__col--margin">
 							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE PRESCRIPTION" />
-							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE &amp; PRINT" />								
+							<input type="submit" name="submit" class="button button--submit button--inline button--blue-bg" id="submit" value="SAVE &amp; PRINT" />
 						</div>
 					</div>
 				</div> <!-- End of Grid -->
 
-			</div> 
-
-			
-		</div>
-
-		</div>
- </div> 
- 
- 
-   <!-- Modal - reports --> 
-<div class="modal modal--reports">
-		
-		<div class="modal__overlay modal__overlay--toggle"></div>
-		<div class="modal__wrapper modal-transition">
-		  
-		<div class="modal__body">
-			<div class="modal__header">
-				<h2 class="modal__header-title">Generate report</h2>
-				<div class="modal__close modal__overlay--toggle"><span></span></div>
 			</div>
-			<div class="modal__content">					
-		
-				<div class="grid">
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--margin">
-							<h3 class="grid__col-title">Patient Information</h3>
-						</div>		
-					</div>
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--13 grid__col--margin">
-							<label class="form__label">PATIENT NAME</label>
-							<select class="custom-select" name="appname">
-								<option value="Patient Name">Emma Williams</option>
-								<option value="Patient Name">Olivia Johnson</option>
-								<option value="Patient Name">Ava Jones</option>
-								<option value="Patient Name">Isabella Brown</option>
-								<option value="Patient Name">Sophia Davis</option>
-								<option value="Patient Name">Mia Latin</option>
-								<option value="Patient Name">Amelia Miller</option>
-								<option value="Patient Name">Charlotte Wilson</option>
-								<option value="Patient Name">Abigail Moore</option>
-								<option value="Patient Name">Emily Anderson</option>
-								<option value="Patient Name">Harper Thomas</option>
-								<option value="Patient Name">Evelyn Jackson</option>
-								<option value="Patient Name">Madison Taylor</option>
-								<option value="Patient Name">Victoria White</option>
-								<option value="Patient Name">Sofia Harris</option>
-								<option value="Patient Name">Scarlett Martin</option>
-								<option value="Patient Name">Aria Thompson</option>
-								<option value="Patient Name">Elizabeth Robinson</option>
-								<option value="Patient Name">Camila Lewis</option>
-								<option value="Patient Name">Layla Garcia</option>
-								<option value="Patient Name">Ella Walker</option>
-								<option value="Patient Name">Chloe Clark</option>
-								<option value="Patient Name">Zoey Rodriguez</option>
-								<option value="Patient Name">Penelope Martinez</option>
-								<option value="Patient Name">Matthew Jones</option>
-								<option value="Patient Name">Benjamin Brown</option>
-								<option value="Patient Name">Alexander Davies</option>
-								<option value="Patient Name">William Evans</option>
-								<option value="Patient Name">Daniel Smith</option>
-								<option value="Patient Name">Jayden Taylor</option>
-								<option value="Patient Name">Oliver Thomas</option>
-								<option value="Patient Name">Carter Roberts</option>
-								<option value="Patient Name">Sebastian Walker</option>
-								<option value="Patient Name">Joseph Johnson</option>
-								<option value="Patient Name">David Thompson</option>
-								<option value="Patient Name">Gabriel Wood</option>
-								<option value="Patient Name">Julian Robinson</option>
-								<option value="Patient Name">Jackson Wright</option>
-								<option value="Patient Name">Anthony King</option>
-								<option value="Patient Name">Dylan Cooper</option>
-							</select>
-						</div>
-						<div class="grid__col grid__col--13 grid__col--margin">
-									<label class="form__label">DATE OR BIRTH</label>
-									<input type="text" name="birthday" class="form__input" value="02/03/1983" />
-						</div>
-						<div class="grid__col grid__col--13 grid__col--margin">
-									<label class="form__label">PHONE</label>
-									<input type="text" name="appphone" class="form__input" value="" />
-						</div>
-					</div>
-					<div class="grid__row  grid__row--margin">
-						<div class="grid__col grid__col--margin">
-							<h3 class="grid__col-title">Report Information</h3>
-						</div>		
-					</div>
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--12 grid__col--margin">
-							<label class="form__label">REPORT TYPE</label>
-							<select class="custom-select" name="applocation">
-									<option value="Diseases">Diseases report</option>
-									<option value="Activity">Activity report</option>
-							</select>
-						</div>
-						<div class="grid__col grid__col--12 grid__col--margin">
-									<label class="form__label">REPORT PERIOD</label>
-									<input type="text" name="dates" class="form__input" value="" />
-						</div>
-					</div>
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--margin">
-							<h3 class="grid__col-title">Doctor Information</h3>
-						</div>		
-					</div>
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--13 grid__col--margin">
-									<label class="form__label">Generated by Doctor</label>
-									<select class="custom-select" name="apptype">
-										<option value="Patient Name">Dr. Alexander Davies</option>
-										<option value="Patient Name">Dr. William Evans</option>
-										<option value="Patient Name">Dr. Daniel Smith</option>
-										<option value="Patient Name">Dr. Jayden Taylor</option>
-										<option value="Patient Name">Dr. Oliver Thomas</option>
-										<option value="Patient Name">Dr. Carter Roberts</option>
-										<option value="Patient Name">Dr. Sebastian Walker</option>
-										<option value="Patient Name">Dr. Joseph Johnson</option>
-										<option value="Patient Name">Dr. David Thompson</option>
-										<option value="Patient Name">Dr. Gabriel Wood</option>
-										<option value="Patient Name">Dr. Julian Robinson</option>
-									</select>
-						</div>
-						<div class="grid__col grid__col--23 grid__col--margin">
-									<label class="form__label">NOTES</label>
-									<input name="notes" id="notes" class="form__input" type="text" />
-						</div>
-					</div>
-					<div class="grid__row grid__row--margin">
-						<div class="grid__col grid__col--margin">
-							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="GENERATE REPORT" />							
-						</div>
-					</div>
-				</div> <!-- End of Grid -->
 
-			</div> 
 
-			
 		</div>
 
 		</div>
- </div> 
+ </div>
+
+
+   <!-- Modal - reports -->
+	 <div class="modal modal--reports">
+
+	 		<div class="modal__overlay modal__overlay--toggle"></div>
+	 		<div class="modal__wrapper modal-transition">
+
+	 		<div class="modal__body">
+	 			<div class="modal__header">
+	 				<h2 class="modal__header-title">Gerar Relatório</h2>
+	 				<div class="modal__close modal__overlay--toggle"><span></span></div>
+	 			</div>
+	 			<div class="modal__content">
+
+	 				<div class="grid">
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--margin">
+	 							<h3 class="grid__col-title">Informações do Paciente</h3>
+	 						</div>
+	 					</div>
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--13 grid__col--margin">
+	 							<label class="form__label">NOME DO PACIENTE</label>
+	 							<select class="custom-select" name="appname">
+	 								<option value="Patient Name">Emma Williams</option>
+	 								<option value="Patient Name">Olivia Johnson</option>
+	 								<option value="Patient Name">Ava Jones</option>
+	 								<option value="Patient Name">Isabella Brown</option>
+	 								<option value="Patient Name">Sophia Davis</option>
+	 								<option value="Patient Name">Mia Latin</option>
+	 								<option value="Patient Name">Amelia Miller</option>
+	 								<option value="Patient Name">Charlotte Wilson</option>
+	 								<option value="Patient Name">Abigail Moore</option>
+	 								<option value="Patient Name">Emily Anderson</option>
+	 								<option value="Patient Name">Harper Thomas</option>
+	 								<option value="Patient Name">Evelyn Jackson</option>
+	 								<option value="Patient Name">Madison Taylor</option>
+	 								<option value="Patient Name">Victoria White</option>
+	 								<option value="Patient Name">Sofia Harris</option>
+	 								<option value="Patient Name">Scarlett Martin</option>
+	 								<option value="Patient Name">Aria Thompson</option>
+	 								<option value="Patient Name">Elizabeth Robinson</option>
+	 								<option value="Patient Name">Camila Lewis</option>
+	 								<option value="Patient Name">Layla Garcia</option>
+	 								<option value="Patient Name">Ella Walker</option>
+	 								<option value="Patient Name">Chloe Clark</option>
+	 								<option value="Patient Name">Zoey Rodriguez</option>
+	 								<option value="Patient Name">Penelope Martinez</option>
+	 								<option value="Patient Name">Matthew Jones</option>
+	 								<option value="Patient Name">Benjamin Brown</option>
+	 								<option value="Patient Name">Alexander Davies</option>
+	 								<option value="Patient Name">William Evans</option>
+	 								<option value="Patient Name">Daniel Smith</option>
+	 								<option value="Patient Name">Jayden Taylor</option>
+	 								<option value="Patient Name">Oliver Thomas</option>
+	 								<option value="Patient Name">Carter Roberts</option>
+	 								<option value="Patient Name">Sebastian Walker</option>
+	 								<option value="Patient Name">Joseph Johnson</option>
+	 								<option value="Patient Name">David Thompson</option>
+	 								<option value="Patient Name">Gabriel Wood</option>
+	 								<option value="Patient Name">Julian Robinson</option>
+	 								<option value="Patient Name">Jackson Wright</option>
+	 								<option value="Patient Name">Anthony King</option>
+	 								<option value="Patient Name">Dylan Cooper</option>
+	 							</select>
+	 						</div>
+	 						<div class="grid__col grid__col--13 grid__col--margin">
+	 									<label class="form__label">DATA DE NASCIMENTO</label>
+	 									<input type="text" name="birthday" class="form__input" value="02/03/1983" />
+	 						</div>
+	 						<div class="grid__col grid__col--13 grid__col--margin">
+	 									<label class="form__label">TELEFONE</label>
+	 									<input type="text" name="appphone" class="form__input" value="" />
+	 						</div>
+	 					</div>
+	 					<div class="grid__row  grid__row--margin">
+	 						<div class="grid__col grid__col--margin">
+	 							<h3 class="grid__col-title">Reportar Informações</h3>
+	 						</div>
+	 					</div>
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--12 grid__col--margin">
+	 							<label class="form__label">TIPO DE RELATÓRIO</label>
+	 							<select class="custom-select" name="applocation">
+	 									<option value="Diseases">Diseases report</option>
+	 									<option value="Activity">Activity report</option>
+	 							</select>
+	 						</div>
+	 						<div class="grid__col grid__col--12 grid__col--margin">
+	 									<label class="form__label">PERÍODO</label>
+	 									<input type="text" name="dates" class="form__input" value="" />
+	 						</div>
+	 					</div>
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--margin">
+	 							<h3 class="grid__col-title">Doctor Information</h3>
+	 						</div>
+	 					</div>
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--13 grid__col--margin">
+	 									<label class="form__label">Gerado pelo Dr.</label>
+	 									<select class="custom-select" name="apptype">
+	 										<option value="Patient Name">Dr. Alexander Davies</option>
+	 										<option value="Patient Name">Dr. William Evans</option>
+	 										<option value="Patient Name">Dr. Daniel Smith</option>
+	 										<option value="Patient Name">Dr. Jayden Taylor</option>
+	 										<option value="Patient Name">Dr. Oliver Thomas</option>
+	 										<option value="Patient Name">Dr. Carter Roberts</option>
+	 										<option value="Patient Name">Dr. Sebastian Walker</option>
+	 										<option value="Patient Name">Dr. Joseph Johnson</option>
+	 										<option value="Patient Name">Dr. David Thompson</option>
+	 										<option value="Patient Name">Dr. Gabriel Wood</option>
+	 										<option value="Patient Name">Dr. Julian Robinson</option>
+	 									</select>
+	 						</div>
+	 						<div class="grid__col grid__col--23 grid__col--margin">
+	 									<label class="form__label">NOTAS</label>
+	 									<input name="notes" id="notes" class="form__input" type="text" />
+	 						</div>
+	 					</div>
+	 					<div class="grid__row grid__row--margin">
+	 						<div class="grid__col grid__col--margin">
+	 							<input type="submit" name="submit" class="button button--submit button--blue-bg" id="submit" value="GERAR RELATÓRIO" />
+	 						</div>
+	 					</div>
+	 				</div> <!-- End of Grid -->
+
+	 			</div>
+
+
+	 		</div>
+
+	 		</div>
+	  </div>
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/moment.min.js"></script>
